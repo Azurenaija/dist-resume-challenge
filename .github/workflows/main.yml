@@ -20,7 +20,7 @@ jobs:
         inlineScript: |
             az storage blob upload-batch --account-name mywebstorage --auth-mode key -d '$web' -s .
     - name: Purge CDN endpoint
-      uses: azure/CLI@v1
+      uses: azure/imoh_etuk@outlook.com
       with:
         inlineScript: |
            az cdn endpoint purge --content-paths  "/*" --profile-name cdn-profile-123 --name https://web-cdn-enpoint --resource-group mywebRG
